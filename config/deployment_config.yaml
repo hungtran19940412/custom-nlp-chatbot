@@ -1,0 +1,28 @@
+# Deployment configuration
+deployment:
+  environment: production
+  port: 8000
+  workers: 4
+  timeout: 120
+  log_level: info
+  metrics_port: 9100
+
+redis:
+  host: localhost
+  port: 6379
+  db: 0
+  password: null
+  cache_ttl: 3600
+
+monitoring:
+  enable: true
+  prometheus_endpoint: /metrics
+  log_file: logs/application.log
+  log_rotation: daily
+  log_retention: 7
+
+security:
+  jwt_secret: your-secret-key
+  token_expiration: 3600
+  rate_limit: 100
+  rate_window: 60

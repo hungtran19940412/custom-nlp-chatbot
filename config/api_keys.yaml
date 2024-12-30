@@ -1,0 +1,16 @@
+# API keys configuration
+financial_data:
+  api_key: your-financial-api-key
+  base_url: https://api.financialdata.com/v1
+
+support_system:
+  api_key: your-support-api-key
+  base_url: https://api.supportsystem.com/v1
+
+monitoring:
+  api_key: your-monitoring-api-key
+  base_url: https://api.monitoring.com/v1
+
+security:
+  jwt_secret: your-jwt-secret-key
+  encryption_key: your-encryption-key
